@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# A script to compare the output of a command with a known string
+# 
+# © 2016 fauno <fauno@endefensadelsl.org>
+#
+# Copying and distribution of this file, with or without modification,
+# are permitted in any medium without royalty provided the copyright
+# notice and this notice are preserved.  This file is offered as-is,
+# without any warranty.
+
+# Read from stdin and compare to arguments.
+test "$(cat)" = "$(echo -e "$@")"
